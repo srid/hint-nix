@@ -22,38 +22,18 @@
         ];
       });
 
-      # The base package set (this value is the default)
-      # basePackages = pkgs.haskellPackages;
-
-      # Packages to add on top of `basePackages`
-      packages = {
-        # Add source or Hackage overrides here
-        # (Local packages are added automatically)
-        /*
-        aeson.source = "1.5.0.0" # Hackage version
-        shower.source = inputs.shower; # Flake input
-        */
-      };
-
       # Add your package overrides here
       settings = {
         hint-nix = {
           stan = true;
-          # haddock = false;
         };
-        /*
-        aeson = {
-          check = false;
-        };
-        */
       };
 
       # What should haskell-flake add to flake outputs?
       autoWire = [ "packages" "apps" "checks" ]; # Wire all but the devShell
     };
 
-    # Default package & app.
+    # Default package.
     packages.default = self'.packages.hint-nix;
-    apps.default = self'.apps.hint-nix;
   };
 }
