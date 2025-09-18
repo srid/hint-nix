@@ -3,7 +3,7 @@ defaults:
     - local: ./hpack-relude.yaml
 
 name: hint-nix
-version: 0.1.0.0
+version: 0.1.0.1
 license: AGPL-3.0-or-later
 copyright: 2025 Sridhar Ratnakumar
 maintainer: srid@srid.ca

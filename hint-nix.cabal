@@ -5,7 +5,7 @@ cabal-version: 2.2
 -- see: https://github.com/sol/hpack
 
 name:           hint-nix
-version:        0.1.0.0
+version:        0.1.0.1
 synopsis:       Helper for using hint with Nix package databases
 description:    Provides convenience functions for running Haskell interpreter with proper Nix package database configuration
 category:       Development
