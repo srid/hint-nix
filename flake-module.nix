@@ -82,6 +82,9 @@ in
 
         # Configure the hint-nix package in the haskell project
         haskellProjects.${cfg.haskellProject} = {
+          packages = {
+            hint-nix.source = ./.;
+          };
           settings = {
             hint-nix = {
               drvAttrs = hintAttrs;
@@ -96,4 +99,3 @@ in
       };
   };
 }
-
