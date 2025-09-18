@@ -6,12 +6,12 @@
       description = "A batteries-included Haskell project template for Nix";
       path = builtins.path { path = inputs.self; };
       welcomeText = ''
-        Please see https://srid.ca/haskell-template/start
+        Please see https://srid.ca/hint-nix/start
       '';
     };
 
     # https://omnix.page/om/init.html#spec
-    om.templates.haskell-template = {
+    om.templates.hint-nix = {
       template = templates.default;
       params = [
         {
@@ -22,7 +22,7 @@
         {
           name = "package-name";
           description = "Name of the Haskell package";
-          placeholder = "haskell-template";
+          placeholder = "hint-nix";
         }
         {
           name = "vscode";
