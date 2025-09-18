@@ -46,7 +46,7 @@ in
 
           workaroundGhcPanic = mkOption {
             type = types.bool;
-            default = true;
+            default = false;
             description = "Enable workaround for GHC panic on macOS (Relocation target for PAGE21 out of range)";
           };
         };
