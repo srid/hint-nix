@@ -4,11 +4,9 @@
 {
   imports = [
     inputs.haskell-flake.flakeModule
+    ../../../flake-module.nix
   ];
   perSystem = { self', lib, config, pkgs, ... }: {
-    # Our only Haskell project. You can have multiple projects, but this template
-    # has only one.
-    # See https://github.com/srid/haskell-flake/blob/master/example/flake.nix
     haskellProjects.default = {
       # To avoid unnecessary rebuilds, we filter projectRoot:
       # https://community.flake.parts/haskell-flake/local#rebuild

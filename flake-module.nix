@@ -83,7 +83,7 @@ in
         # Configure the hint-nix package in the haskell project
         haskellProjects.${cfg.haskellProject} = {
           packages = {
-            hint-nix.source = ./.;
+            hint-nix.source = lib.mkDefault ./.;
           };
           settings = {
             hint-nix = {
