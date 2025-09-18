@@ -9,7 +9,7 @@ version:        0.1.0.0
 synopsis:       Helper for using hint with Nix package databases
 description:    Provides convenience functions for running Haskell interpreter with proper Nix package database configuration
 category:       Development
-homepage:       https://github.com/juspay/vira
+homepage:       https://github.com/srid/hint-nix
 author:         Sridhar Ratnakumar
 maintainer:     srid@srid.ca
 copyright:      2025 Sridhar Ratnakumar
